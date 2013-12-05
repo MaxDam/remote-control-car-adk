@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center">
+	
+    <TextView
+        android:id="@+id/ip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp" />
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center">
+		
+        <Button
+             android:id="@+id/testArduino"
+		     android:layout_height="wrap_content"
+		     android:layout_width="wrap_content"
+		     android:text="@string/test_arduino"/>
+        
+        <Button
+             android:id="@+id/reconnectUsbArduino"
+		     android:layout_height="wrap_content"
+		     android:layout_width="wrap_content"
+		     android:text="@string/reconnect_arduino"/>
+        
+	</LinearLayout>
+	 
+    <ScrollView
+        android:id="@+id/ConsoleScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/ConsoleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp" />
+    </ScrollView>
+	
+</LinearLayout>

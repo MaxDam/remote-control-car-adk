@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+                android:title="User data">
+        <EditTextPreference
+                android:name="Nickname"
+                android:summary="Tap to edit nick name."
+                android:defaultValue="User"
+                android:title="Nickname"
+                android:key="nickNamePref" />
+        </PreferenceCategory>
+</PreferenceScreen>
